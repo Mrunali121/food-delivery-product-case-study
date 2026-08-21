@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QuickBite — Product Case Study</title>
+<meta name="description" content="A product management case study: Problem, Research, Decision, Prioritization, Solution, Measurement — for a food delivery app's reorder and live ETA features.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Product Case Study</div>
+    <h1>QuickBite</h1>
+    <p class="sub">One product problem, followed end-to-end: from a broken repeat-order metric through research, a scored prioritization decision, a shipped solution, and the measurement that proved it worked.</p>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="https://github.com/YOUR-USERNAME/food-delivery-product-case-study" target="_blank" rel="noopener">View repository →</a>
+      <a class="btn btn-ghost" href="#arc">See the full arc</a>
+    </div>
+  </div>
+</header>
+
+<section id="arc">
+  <div class="wrap">
+    <div class="section-head reveal"><h2>Problem → Measurement</h2><span class="section-tag">6 stages</span></div>
+    <div class="arc-rail reveal">
+      <div class="arc-step">
+        <div class="arc-num">01</div>
+        <h3>Problem</h3>
+        <p>68% of first-time customers never reorder within 30 days. 22% of support tickets ask "where is my order?"</p>
+      </div>
+      <div class="arc-step">
+        <div class="arc-num">02</div>
+        <h3>Research</h3>
+        <p>15 interviews, 600 tagged tickets, 412-respondent survey, 90-day funnel review.</p>
+      </div>
+      <div class="arc-step">
+        <div class="arc-num">03</div>
+        <h3>Decision</h3>
+        <p>Competitor analysis confirms the gap — two rivals already ship what QuickBite is missing.</p>
+      </div>
+      <div class="arc-step">
+        <div class="arc-num">04</div>
+        <h3>Prioritization</h3>
+        <p>6 candidates scored with RICE, live formulas, workshopped with Eng/Design/Support.</p>
+      </div>
+      <div class="arc-step">
+        <div class="arc-num">05</div>
+        <h3>Solution</h3>
+        <p>One-Tap Reorder + Live ETA Confidence — full PRD, user stories, wireframes.</p>
+      </div>
+      <div class="arc-step arc-step-final">
+        <div class="arc-num">06</div>
+        <h3>Measurement</h3>
+        <p>Before/after SQL + charts against the exact targets the PRD committed to.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="prioritization">
+  <div class="wrap">
+    <div class="section-head reveal"><h2>Prioritization</h2><span class="section-tag">RICE scoring</span></div>
+    <div class="rice-table reveal">
+      <div class="rice-row rice-head">
+        <span>Rank</span><span>Feature</span><span>RICE</span><span>Decision</span>
+      </div>
+      <div class="rice-row rice-winner">
+        <span>1</span><span>Live ETA Confidence</span><span class="mono">28.8</span><span class="tag-built">Q2 — Built</span>
+      </div>
+      <div class="rice-row rice-winner">
+        <span>2</span><span>One-Tap Reorder</span><span class="mono">25.5</span><span class="tag-built">Q2 — Built</span>
+      </div>
+      <div class="rice-row">
+        <span>3</span><span>Checkout Simplification</span><span class="mono">5.6</span><span class="tag-deferred">Q3 — Deferred</span>
+      </div>
+      <div class="rice-row">
+        <span>4</span><span>Loyalty &amp; Rewards Program</span><span class="mono">3.0</span><span class="tag-deferred">Q4 — Deferred</span>
+      </div>
+      <div class="rice-row">
+        <span>5</span><span>In-App Courier Chat</span><span class="mono">0.4</span><span class="tag-none">Not prioritized</span>
+      </div>
+      <div class="rice-row">
+        <span>6</span><span>Group Ordering / Bill Splitting</span><span class="mono">0.3</span><span class="tag-none">Not prioritized</span>
+      </div>
+    </div>
+    <a class="inline-link reveal" href="https://github.com/YOUR-USERNAME/food-delivery-product-case-study/blob/main/feature-prioritization.xlsx" target="_blank">Open the full scoring workbook (live formulas) →</a>
+  </div>
+</section>
+
+<section id="mockups">
+  <div class="wrap">
+    <div class="section-head reveal"><h2>Before / After</h2><span class="section-tag">Wireframes</span></div>
+    <div class="mockup-grid reveal">
+      <div class="mockup-card">
+        <img src="mockups/screens/01-home-current.svg" alt="Current home screen, no reorder shortcut">
+        <p class="mockup-label">Current — no reorder entry point</p>
+      </div>
+      <div class="mockup-card mockup-card-after">
+        <img src="mockups/screens/02-home-improved.svg" alt="Improved home screen with one-tap reorder cards">
+        <p class="mockup-label">Improved — one-tap reorder</p>
+      </div>
+      <div class="mockup-card">
+        <img src="mockups/screens/03-tracking-current.svg" alt="Current tracking screen with static ETA">
+        <p class="mockup-label">Current — static ETA range</p>
+      </div>
+      <div class="mockup-card mockup-card-after">
+        <img src="mockups/screens/04-tracking-improved.svg" alt="Improved tracking screen with live ETA">
+        <p class="mockup-label">Improved — live ETA + stage</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="measurement">
+  <div class="wrap">
+    <div class="section-head reveal"><h2>Measurement</h2><span class="section-tag">Before vs. after, live from data/measurement-metrics.json</span></div>
+    <div id="metrics-container" class="metrics-grid reveal">
+      <p class="mono loading-text">Loading measured results…</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>QUICKBITE — A SELF-DIRECTED PRODUCT MANAGEMENT PORTFOLIO PROJECT. COMPANY AND PRODUCT ARE ILLUSTRATIVE.</p>
+    <div class="links">
+      <a href="https://github.com/YOUR-USERNAME/food-delivery-product-case-study" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://YOUR-USERNAME.github.io/" target="_blank" rel="noopener">Portfolio</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

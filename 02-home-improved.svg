@@ -1,0 +1,35 @@
+<svg viewBox="0 0 360 720" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+  <rect width="360" height="720" fill="#F2F4F1"/>
+  <rect x="0" y="0" width="360" height="64" fill="#14213D"/>
+  <text x="20" y="40" fill="#FFFFFF" font-size="18" font-weight="bold">QuickBite</text>
+  <circle cx="330" cy="32" r="14" fill="#3A4560"/>
+
+  <rect x="20" y="84" width="320" height="40" rx="6" fill="#FFFFFF" stroke="#D4D9D6"/>
+  <text x="36" y="109" fill="#5B6472" font-size="13">Search restaurants...</text>
+
+  <!-- NEW: reorder section -->
+  <rect x="20" y="140" width="320" height="150" rx="8" fill="#FFFFFF" stroke="#0E8F7E" stroke-width="1.5"/>
+  <text x="34" y="164" fill="#0E8F7E" font-size="13" font-weight="bold">↻ Order again</text>
+
+  <rect x="34" y="178" width="292" height="42" rx="6" fill="#F2F4F1"/>
+  <text x="46" y="194" fill="#14213D" font-size="12" font-weight="bold">Bella Pasta — Carbonara + Salad</text>
+  <text x="46" y="210" fill="#5B6472" font-size="10">Last ordered 3 days ago</text>
+  <rect x="272" y="185" width="42" height="26" rx="4" fill="#0E8F7E"/>
+  <text x="293" y="202" fill="#FFFFFF" font-size="10" text-anchor="middle">Tap</text>
+
+  <rect x="34" y="226" width="292" height="42" rx="6" fill="#F2F4F1"/>
+  <text x="46" y="242" fill="#14213D" font-size="12" font-weight="bold">Sushi Go — Salmon set</text>
+  <text x="46" y="258" fill="#5B6472" font-size="10">Last ordered 1 week ago</text>
+  <rect x="272" y="233" width="42" height="26" rx="4" fill="#0E8F7E"/>
+  <text x="293" y="250" fill="#FFFFFF" font-size="10" text-anchor="middle">Tap</text>
+
+  <text x="20" y="316" fill="#14213D" font-size="14" font-weight="bold">Popular near you</text>
+  <rect x="20" y="330" width="150" height="90" rx="8" fill="#FFFFFF" stroke="#D4D9D6"/>
+  <rect x="190" y="330" width="150" height="90" rx="8" fill="#FFFFFF" stroke="#D4D9D6"/>
+
+  <rect x="20" y="450" width="320" height="60" rx="6" fill="#E3F3EF" stroke="#0E8F7E" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="32" y="472" fill="#0B7A6C" font-size="12" font-weight="bold">✓ One tap → pre-filled checkout</text>
+  <text x="32" y="490" fill="#0B7A6C" font-size="11">Full cart + modifiers restored (FR-01, FR-02)</text>
+
+  <text x="20" y="540" fill="#5B6472" font-size="11" font-style="italic">Improved home screen — one-tap reorder cards</text>
+</svg>

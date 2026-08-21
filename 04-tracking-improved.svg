@@ -1,0 +1,34 @@
+<svg viewBox="0 0 360 720" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+  <rect width="360" height="720" fill="#F2F4F1"/>
+  <rect x="0" y="0" width="360" height="64" fill="#14213D"/>
+  <text x="20" y="40" fill="#FFFFFF" font-size="18" font-weight="bold">Order Status</text>
+
+  <rect x="20" y="90" width="320" height="220" rx="8" fill="#FFFFFF" stroke="#0E8F7E" stroke-width="1.5"/>
+  <text x="36" y="120" fill="#14213D" font-size="13" font-weight="bold">Bella Pasta</text>
+  <text x="36" y="140" fill="#5B6472" font-size="12">Live estimated delivery:</text>
+  <text x="36" y="168" fill="#0E8F7E" font-size="26" font-weight="bold">18 min</text>
+  <circle cx="182" cy="160" r="4" fill="#0E8F7E"/>
+  <text x="192" y="164" fill="#0E8F7E" font-size="10">● live, updates every 60s</text>
+
+  <!-- Stage tracker -->
+  <line x1="46" y1="200" x2="314" y2="200" stroke="#D4D9D6" stroke-width="3"/>
+  <line x1="46" y1="200" x2="220" y2="200" stroke="#0E8F7E" stroke-width="3"/>
+  <circle cx="46" cy="200" r="7" fill="#0E8F7E"/>
+  <circle cx="140" cy="200" r="7" fill="#0E8F7E"/>
+  <circle cx="220" cy="200" r="7" fill="#0E8F7E"/>
+  <circle cx="314" cy="200" r="7" fill="#D4D9D6"/>
+  <text x="46" y="222" fill="#14213D" font-size="9" text-anchor="middle">Confirmed</text>
+  <text x="140" y="222" fill="#14213D" font-size="9" text-anchor="middle">Preparing</text>
+  <text x="220" y="222" fill="#14213D" font-size="9" text-anchor="middle">Picked up</text>
+  <text x="314" y="222" fill="#5B6472" font-size="9" text-anchor="middle">Arriving</text>
+
+  <rect x="36" y="250" width="288" height="42" rx="6" fill="#F2F4F1"/>
+  <text x="46" y="276" fill="#14213D" font-size="11">📍 Courier is 1.4 km away, moving</text>
+
+  <rect x="20" y="330" width="320" height="90" rx="6" fill="#E3F3EF" stroke="#0E8F7E" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="32" y="354" fill="#0B7A6C" font-size="12" font-weight="bold">✓ Live GPS + kitchen-queue ETA</text>
+  <text x="32" y="372" fill="#0B7A6C" font-size="11">Auto-refreshes every 60s (FR-04). Push alert</text>
+  <text x="32" y="388" fill="#0B7A6C" font-size="11">fires if ETA drifts &gt;10 min (FR-05)</text>
+
+  <text x="20" y="450" fill="#5B6472" font-size="11" font-style="italic">Improved tracking screen — live ETA + stage</text>
+</svg>
