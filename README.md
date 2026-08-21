@@ -1,6 +1,8 @@
 # QuickBite — Reorder & Live ETA Confidence
 ### A Product Case Study: Problem → Research → Decision → Prioritization → Solution → Measurement
 
+Live Site: ** https://mrunali121.github.io/food-delivery-product-case-study/ **
+
 **Role:** Product Manager (simulated project)
 **Product:** QuickBite — food delivery app, operating in Germany
 
