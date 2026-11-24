@@ -1,0 +1,32 @@
+{
+  "metrics": [
+    {
+      "id": "repeat_rate",
+      "label": "30-Day Repeat Order Rate",
+      "unit": "%",
+      "before": 32,
+      "after": 47,
+      "target": 45,
+      "goal": "increase"
+    },
+    {
+      "id": "eta_accuracy",
+      "label": "Avg. Absolute ETA Error",
+      "unit": "min",
+      "before": 14.2,
+      "after": 4.6,
+      "target": 5,
+      "goal": "decrease"
+    },
+    {
+      "id": "support_tickets",
+      "label": "\"Where is my order?\" Tickets (% of total)",
+      "unit": "%",
+      "before": 22,
+      "after": 11.2,
+      "target": 12,
+      "goal": "decrease"
+    }
+  ],
+  "source": "analytics/analysis.sql (queries 4-7), see product-requirements-document.md Section 7"
+}

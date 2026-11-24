@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Roadmap | QuickBite Product Case Study</title>
+<meta name="description" content="QuickBite product case study: Product Roadmap.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav class="topnav" aria-label="Case study pages"><div class="wrap nav-in"><a href="index.html" class="brand">QuickBite</a><a href="problem.html">Problem & Research</a><a href="personas.html">Personas</a><a href="competitors.html">Competitors</a><a href="prioritization.html">Prioritization</a><a href="prd.html">Solution (PRD)</a><a href="stories.html">User Stories</a><a href="roadmap.html" aria-current="page">Roadmap</a><a href="before-after.html">Before / After</a><a href="measurement.html">Measurement</a></div></nav>
+<header class="pagehead"><div class="wrap"><div class="eyebrow">Case study page</div><h1>Product Roadmap</h1><p class="sub">How the scored decision turns into quarterly delivery.</p></div></header>
+<main class="wrap doc"><p>Quarterly roadmap, directly sequenced from the <a href="prioritization.html">RICE prioritization
+scoring</a>. Each quarter's focus is a direct
+consequence of what scored highest against the problems found in
+<a href="problem.html">user research</a>.</p>
+<h2>Q1 — Discovery &amp; Validation</h2>
+<ul>
+<li>User research (interviews, survey, ticket tagging, funnel analysis)</li>
+<li>Competitor analysis</li>
+<li>RICE prioritization workshop with Engineering, Design, and Support leads</li>
+<li>PRD written and approved for the two top-scoring initiatives</li>
+</ul>
+<p><strong>Output:</strong> <a href="problem.html">User Research</a>, <a href="personas.html">Personas</a>,
+<a href="competitors.html">Competitor Analysis</a>, <a href="prioritization.html">Prioritization</a></p>
+<h2>Q2 — Build: Reorder &amp; Live ETA Confidence</h2>
+<ul>
+<li>One-Tap Reorder (FR-01 to FR-03, FR-07)</li>
+<li>Live ETA Confidence (FR-04 to FR-06)</li>
+<li>Phased rollout: 10% → 50% → 100% Berlin, then national expansion</li>
+</ul>
+<p><strong>Output:</strong> <a href="prd.html">PRD</a>, <a href="stories.html">User Stories</a>,
+<a href="before-after.html">Mockups</a>, shipped feature</p>
+<p><strong>Success gate to proceed to Q3:</strong> 30-day repeat order rate improves measurably
+and ETA accuracy holds at ±7 minutes or better — tracked via
+<a href="measurement.html#sql"><code>analytics/analysis.sql</code></a>.</p>
+<h2>Q3 — Checkout Simplification (deferred from this cycle)</h2>
+<ul>
+<li>Guest checkout / reduced required fields at payment step</li>
+<li>Addresses the 34% payment-step drop-off found in research (Finding #3), which
+  scored lower than reorder/ETA in Q1's RICE prioritization but remains a real,
+  sized opportunity</li>
+</ul>
+<h2>Q4 — Loyalty &amp; Retention Layer</h2>
+<ul>
+<li>Loyalty/rewards program (competitive gap identified in
+  <a href="competitors.html">Competitor Analysis</a>)</li>
+<li>Builds on the trust foundation established by Live ETA Confidence — sequencing
+  a rewards program before fixing delivery trust would have asked customers to
+  stay loyal to an experience they didn't yet trust</li>
+</ul>
+<h2>Explicitly not on this roadmap</h2>
+<ul>
+<li>In-app courier chat — scored lowest in RICE prioritization, revisit if support
+  ticket data shows a new driver after Q2/Q3 ship</li>
+<li>Group ordering / bill splitting — interesting but not connected to either
+  problem this roadmap is solving; would need its own research cycle</li>
+</ul><div class="pager"><a class="pg" href="stories.html">&larr; User Stories</a><a class="pg" href="before-after.html">Before / After &rarr;</a></div></main>
+<footer>
+  <div class="wrap">
+    <p>QUICKBITE - A SELF-DIRECTED PRODUCT MANAGEMENT PORTFOLIO PROJECT. COMPANY AND PRODUCT ARE ILLUSTRATIVE.</p>
+    <div class="links">
+      <a href="https://github.com/Mrunali121/food-delivery-product-case-study" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://mrunali121.github.io/" target="_blank" rel="noopener">Portfolio</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

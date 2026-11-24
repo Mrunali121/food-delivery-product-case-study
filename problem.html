@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Problem and Research | QuickBite Product Case Study</title>
+<meta name="description" content="QuickBite product case study: Problem and Research.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav class="topnav" aria-label="Case study pages"><div class="wrap nav-in"><a href="index.html" class="brand">QuickBite</a><a href="problem.html" aria-current="page">Problem & Research</a><a href="personas.html">Personas</a><a href="competitors.html">Competitors</a><a href="prioritization.html">Prioritization</a><a href="prd.html">Solution (PRD)</a><a href="stories.html">User Stories</a><a href="roadmap.html">Roadmap</a><a href="before-after.html">Before / After</a><a href="measurement.html">Measurement</a></div></nav>
+<header class="pagehead"><div class="wrap"><div class="eyebrow">Case study page</div><h1>Problem and Research</h1><p class="sub">Why 68% of first-time customers never reorder, and why 22% of support tickets ask where the order is.</p></div></header>
+<main class="wrap doc"><h2>Objective</h2>
+<p>Understand why 68% of first-time customers never place a second order within 30
+days, and why "Where is my order?" tickets make up 22% of support volume.</p>
+<h2>Methodology</h2>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Sample</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1:1 interviews</td>
+<td>15 customers (mix of one-time and repeat)</td>
+<td>Depth on decision points and friction</td>
+</tr>
+<tr>
+<td>Support ticket tagging</td>
+<td>600 tickets, 4-week sample</td>
+<td>Quantify recurring complaint themes</td>
+</tr>
+<tr>
+<td>In-app survey</td>
+<td>412 respondents</td>
+<td>Validate interview themes at scale</td>
+</tr>
+<tr>
+<td>Funnel analytics review</td>
+<td>90 days of checkout &amp; order data</td>
+<td>Locate where drop-off actually happens</td>
+</tr>
+</tbody>
+</table>
+<h2>Key Findings</h2>
+<h3>1. The ETA shown at checkout doesn't match reality</h3>
+<p>Support ticket tagging showed <strong>22% of all tickets</strong> referenced order status or
+delivery time. In interviews, customers consistently described the checkout ETA
+as a promise, not an estimate — when the actual delivery ran 15+ minutes past it,
+trust dropped sharply, even when the food still arrived warm and correct.</p>
+<blockquote>
+<p>"It said 25 minutes. I planned my lunch break around that. It showed up in 45.
+I don't think I even was that hungry anymore — I was just annoyed." — Interview P7</p>
+</blockquote>
+<h3>2. Reordering a favorite meal is more effort than it should be</h3>
+<p>11 of 15 interview participants described reordering the same meal from the same
+restaurant as "searching from scratch again" — re-navigating the restaurant menu
+and re-selecting the same modifiers each time. Survey data backed this up: 61% of
+respondents said they'd order more often "if it were faster to get my usual."</p>
+<h3>3. Checkout has more required fields than repeat users expect</h3>
+<p>Funnel data showed a <strong>34% drop-off at the payment step</strong>, concentrated among
+users who had never completed a purchase before. This is flagged as a real
+finding but explicitly scoped to a later release — see
+<a href="prioritization.html">Prioritization</a> for why it wasn't picked for this
+cycle despite the size of the drop-off.</p>
+<h3>4. Static tracking doesn't build confidence the way live tracking would</h3>
+<p>Survey respondents were asked to rate trust in delivery time estimates on a 1–5
+scale: current static range averaged 2.6; when shown a mockup of live,
+continuously-updating tracking, expected trust rating rose to 4.1.</p>
+<h2>Synthesis</h2>
+<p>The one-and-done problem and the support ticket volume problem share a root
+cause: customers don't trust QuickBite to get the <em>next</em> order right, so there's
+no pull to come back and find out. This synthesis directly shaped the two
+features selected for this cycle — see <a href="prioritization.html">Prioritization</a>
+and the resulting <a href="prd.html">PRD</a>.</p>
+<p>See <a href="personas.html">Personas</a> for how these findings map onto the three user
+segments interviewed.</p><div class="pager"><a class="pg" href="index.html">&larr; Overview</a><a class="pg" href="personas.html">Personas &rarr;</a></div></main>
+<footer>
+  <div class="wrap">
+    <p>QUICKBITE - A SELF-DIRECTED PRODUCT MANAGEMENT PORTFOLIO PROJECT. COMPANY AND PRODUCT ARE ILLUSTRATIVE.</p>
+    <div class="links">
+      <a href="https://github.com/Mrunali121/food-delivery-product-case-study" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://mrunali121.github.io/" target="_blank" rel="noopener">Portfolio</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User Stories | QuickBite Product Case Study</title>
+<meta name="description" content="QuickBite product case study: User Stories.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav class="topnav" aria-label="Case study pages"><div class="wrap nav-in"><a href="index.html" class="brand">QuickBite</a><a href="problem.html">Problem & Research</a><a href="personas.html">Personas</a><a href="competitors.html">Competitors</a><a href="prioritization.html">Prioritization</a><a href="prd.html">Solution (PRD)</a><a href="stories.html" aria-current="page">User Stories</a><a href="roadmap.html">Roadmap</a><a href="before-after.html">Before / After</a><a href="measurement.html">Measurement</a></div></nav>
+<header class="pagehead"><div class="wrap"><div class="eyebrow">Case study page</div><h1>User Stories</h1><p class="sub">The requirements broken into stories with acceptance criteria.</p></div></header>
+<main class="wrap doc"><p>Derived directly from the <a href="prd.html">PRD</a> functional
+requirements. Written for the Q2 build described in the
+<a href="roadmap.html">Roadmap</a>.</p>
+<hr />
+<h3>US-01 — One-tap reorder from home screen</h3>
+<p><strong>As</strong> Busy Ben, <strong>I want</strong> to see my most recent orders on the home screen
+<strong>so that</strong> I can reorder my usual lunch without searching for it again.</p>
+<p><strong>Acceptance Criteria</strong>
+- Home screen shows up to 3 most recent <em>distinct</em> orders (not 3 most recent
+  transactions, to avoid showing the same order 3 times if ordered repeatedly)
+- Each card shows restaurant name, item summary, and last-ordered date
+- Tapping a card goes directly to a pre-filled checkout, not the restaurant menu
+- <em>(FR-01)</em></p>
+<hr />
+<h3>US-02 — Full cart reconstruction on reorder</h3>
+<p><strong>As</strong> Family Fiona, <strong>I want</strong> my reorder to include all the modifiers I chose
+last time <strong>so that</strong> I don't have to reconfigure each family member's order.</p>
+<p><strong>Acceptance Criteria</strong>
+- All items, quantities, and modifiers from the original order are restored
+  exactly
+- If pricing has changed since the last order, the new price is shown clearly
+  before checkout, not silently applied
+- <em>(FR-02)</em></p>
+<hr />
+<h3>US-03 — Graceful handling of unavailable items</h3>
+<p><strong>As</strong> Family Fiona, <strong>I want</strong> to be told if an item from my usual order isn't
+available anymore <strong>before</strong> I reach checkout <strong>so that</strong> I'm not surprised by a
+missing item after paying.</p>
+<p><strong>Acceptance Criteria</strong>
+- If any item in a reordered cart is unavailable, a substitution prompt appears
+  before checkout, offering the closest available alternative or removal
+- The user cannot proceed to payment with an unresolved unavailable item
+- <em>(FR-03)</em></p>
+<hr />
+<h3>US-04 — Live ETA at checkout</h3>
+<p><strong>As</strong> Student Sara, <strong>I want</strong> the ETA I see at checkout to reflect real courier
+and kitchen conditions <strong>so that</strong> I can trust it enough to actually plan around
+it.</p>
+<p><strong>Acceptance Criteria</strong>
+- ETA is computed from live courier GPS and current kitchen queue depth, not a
+  static restaurant-level average
+- ETA refreshes at least every 60 seconds while the order is active
+- <em>(FR-04)</em></p>
+<hr />
+<h3>US-05 — Proactive delay notification</h3>
+<p><strong>As</strong> Busy Ben, <strong>I want</strong> to be told if my order is running late <strong>before</strong> I
+have to check the app myself <strong>so that</strong> I can adjust my plans without
+guesswork.</p>
+<p><strong>Acceptance Criteria</strong>
+- If live ETA drifts more than 10 minutes past the confirmed estimate, a push
+  notification fires automatically
+- Notification states the new estimated time, not just "your order is delayed"
+- <em>(FR-05)</em></p>
+<hr />
+<h3>US-06 — Order tracking with stage and ETA together</h3>
+<p><strong>As</strong> Student Sara, <strong>I want</strong> to see both the order stage and the live ETA on
+one screen <strong>so that</strong> I understand not just <em>when</em> but <em>why</em> it's taking that
+long.</p>
+<p><strong>Acceptance Criteria</strong>
+- Tracking screen shows current stage (Confirmed → Preparing → Picked up →
+  Arriving) alongside the live ETA
+- If GPS signal is lost, the screen shows a "tracking temporarily unavailable"
+  state rather than a frozen stale ETA
+- <em>(FR-06)</em></p><div class="pager"><a class="pg" href="prd.html">&larr; Solution (PRD)</a><a class="pg" href="roadmap.html">Roadmap &rarr;</a></div></main>
+<footer>
+  <div class="wrap">
+    <p>QUICKBITE - A SELF-DIRECTED PRODUCT MANAGEMENT PORTFOLIO PROJECT. COMPANY AND PRODUCT ARE ILLUSTRATIVE.</p>
+    <div class="links">
+      <a href="https://github.com/Mrunali121/food-delivery-product-case-study" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://mrunali121.github.io/" target="_blank" rel="noopener">Portfolio</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

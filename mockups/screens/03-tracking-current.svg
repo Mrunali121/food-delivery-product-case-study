@@ -1,0 +1,22 @@
+<svg viewBox="0 0 360 720" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+  <rect width="360" height="720" fill="#F2F4F1"/>
+  <rect x="0" y="0" width="360" height="64" fill="#14213D"/>
+  <text x="20" y="40" fill="#FFFFFF" font-size="18" font-weight="bold">Order Status</text>
+
+  <rect x="20" y="90" width="320" height="180" rx="8" fill="#FFFFFF" stroke="#D4D9D6"/>
+  <text x="36" y="120" fill="#14213D" font-size="13" font-weight="bold">Bella Pasta</text>
+  <text x="36" y="140" fill="#5B6472" font-size="12">Estimated delivery:</text>
+  <text x="36" y="168" fill="#14213D" font-size="26" font-weight="bold">20–30 min</text>
+  <text x="36" y="188" fill="#5B6472" font-size="10">(static range, shown at checkout)</text>
+
+  <rect x="36" y="210" width="288" height="10" rx="5" fill="#D4D9D6"/>
+  <rect x="36" y="210" width="140" height="10" rx="5" fill="#5B6472"/>
+  <text x="36" y="242" fill="#5B6472" font-size="11">Preparing your order...</text>
+
+  <rect x="20" y="300" width="320" height="80" rx="6" fill="#FCEFDD" stroke="#E2963A" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="32" y="324" fill="#92400e" font-size="12" font-weight="bold">⚠ Static estimate, no live updates</text>
+  <text x="32" y="342" fill="#92400e" font-size="11">User must open the app and refresh to</text>
+  <text x="32" y="358" fill="#92400e" font-size="11">check status — no proactive delay alert</text>
+
+  <text x="20" y="420" fill="#5B6472" font-size="11" font-style="italic">Current tracking screen — static range only</text>
+</svg>

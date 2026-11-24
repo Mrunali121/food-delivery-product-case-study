@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Requirements Document | QuickBite Product Case Study</title>
+<meta name="description" content="QuickBite product case study: Product Requirements Document.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav class="topnav" aria-label="Case study pages"><div class="wrap nav-in"><a href="index.html" class="brand">QuickBite</a><a href="problem.html">Problem & Research</a><a href="personas.html">Personas</a><a href="competitors.html">Competitors</a><a href="prioritization.html">Prioritization</a><a href="prd.html" aria-current="page">Solution (PRD)</a><a href="stories.html">User Stories</a><a href="roadmap.html">Roadmap</a><a href="before-after.html">Before / After</a><a href="measurement.html">Measurement</a></div></nav>
+<header class="pagehead"><div class="wrap"><div class="eyebrow">Case study page</div><h1>Product Requirements Document</h1><p class="sub">What we are building, why, and how we will know it worked.</p></div></header>
+<main class="wrap doc"><p><strong>Product:</strong> QuickBite (food delivery app, Germany)
+<strong>Owner:</strong> Product Manager
+<strong>Status:</strong> Approved for build, Q2
+<strong>Related:</strong> <a href="roadmap.html">Roadmap</a> · <a href="problem.html">User Research</a> · <a href="prioritization.html">Prioritization</a> · <a href="stories.html">User Stories</a></p>
+<h2>1. Problem</h2>
+<p>68% of first-time QuickBite customers never place a second order within 30 days,
+and "Where is my order?" tickets make up 22% of all support volume. Both trace
+back to the same root cause identified in <a href="problem.html">user research</a>:
+customers don't trust the app to get their next order right, so they don't come
+back to find out.</p>
+<h2>2. Goals</h2>
+<table>
+<thead>
+<tr>
+<th>Goal</th>
+<th>Metric</th>
+<th>Target</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Increase repeat ordering</td>
+<td>30-day repeat order rate</td>
+<td>32% → 45%</td>
+</tr>
+<tr>
+<td>Reduce delivery-status support load</td>
+<td>"Where is my order?" tickets as % of total</td>
+<td>22% → 12%</td>
+</tr>
+<tr>
+<td>Reduce ETA-related complaints</td>
+<td>ETA accuracy (actual vs. shown at checkout)</td>
+<td>±15 min → ±5 min</td>
+</tr>
+</tbody>
+</table>
+<h2>3. Non-Goals (explicitly out of scope for this release)</h2>
+<ul>
+<li>Checkout field reduction / guest checkout simplification (deferred to Q3 — see
+  <a href="roadmap.html">Roadmap</a> and <a href="prioritization.html">Prioritization</a>)</li>
+<li>Loyalty/rewards program</li>
+<li>In-app courier chat</li>
+</ul>
+<h2>4. Scope</h2>
+<h3>4.1 One-Tap Reorder</h3>
+<ul>
+<li>A "Reorder" entry point on the home screen surfacing the user's 3 most recent
+  distinct orders.</li>
+<li>One tap reconstructs the full cart (items, modifiers, restaurant) and takes the
+  user directly to checkout — not the restaurant menu.</li>
+<li>If any item is no longer available, the user sees a clear substitution prompt
+  before reaching checkout, not a silent removal.</li>
+</ul>
+<h3>4.2 Live ETA Confidence</h3>
+<ul>
+<li>Replace the static "20–30 min" range shown at checkout with a live,
+  continuously-updating estimate driven by courier GPS and kitchen prep-time data.</li>
+<li>Push a proactive notification if the ETA shifts by more than 10 minutes from
+  what was shown at order confirmation — before the customer has to ask.</li>
+<li>Order tracking screen shows current stage (Confirmed → Preparing → Picked up →
+  Arriving) alongside the live ETA, not just a progress bar.</li>
+</ul>
+<h2>5. Functional Requirements</h2>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Requirement</th>
+<th>Priority</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FR-01</td>
+<td>Home screen surfaces the 3 most recent distinct orders as one-tap reorder cards</td>
+<td>Must</td>
+</tr>
+<tr>
+<td>FR-02</td>
+<td>Reorder reconstructs the full cart including modifiers and takes the user to checkout</td>
+<td>Must</td>
+</tr>
+<tr>
+<td>FR-03</td>
+<td>Unavailable items trigger a substitution prompt before checkout, never a silent drop</td>
+<td>Must</td>
+</tr>
+<tr>
+<td>FR-04</td>
+<td>Checkout ETA is computed live from courier GPS + current kitchen queue, refreshed every 60 seconds</td>
+<td>Must</td>
+</tr>
+<tr>
+<td>FR-05</td>
+<td>A push notification fires if live ETA drifts more than 10 minutes from the confirmed estimate</td>
+<td>Must</td>
+</tr>
+<tr>
+<td>FR-06</td>
+<td>Order tracking screen shows stage + live ETA together</td>
+<td>Must</td>
+</tr>
+<tr>
+<td>FR-07</td>
+<td>Reorder cards update to reflect the 3 most recent orders after each new order</td>
+<td>Should</td>
+</tr>
+</tbody>
+</table>
+<h2>6. Edge Cases</h2>
+<ul>
+<li>Reordering when the restaurant is currently closed → show reorder card as
+  disabled with next-open time, not hidden.</li>
+<li>Reordering when the restaurant has left the platform → card removed from the
+  reorder list gracefully, no broken deep link.</li>
+<li>GPS signal loss mid-delivery → ETA falls back to kitchen-queue-based estimate
+  with a "tracking temporarily unavailable" note, never a frozen stale number.</li>
+</ul>
+<h2>7. Success Metrics &amp; Measurement</h2>
+<p>See <a href="measurement.html#sql"><code>analytics/analysis.sql</code></a> for the actual queries used
+to track these post-launch:
+- 30-day repeat order rate, before/after cohort comparison
+- ETA accuracy distribution (shown vs. actual delivery time)
+- "Where is my order?" ticket volume as a % of total support tickets</p>
+<h2>8. Rollout Plan</h2>
+<p>Phased: 10% of Berlin traffic (Week 1) → 50% of Berlin (Week 2) → 100% Berlin +
+expand nationally (Week 4), gated on the ETA accuracy metric holding at or below
+±7 minutes at each stage.</p><div class="pager"><a class="pg" href="prioritization.html">&larr; Prioritization</a><a class="pg" href="stories.html">User Stories &rarr;</a></div></main>
+<footer>
+  <div class="wrap">
+    <p>QUICKBITE - A SELF-DIRECTED PRODUCT MANAGEMENT PORTFOLIO PROJECT. COMPANY AND PRODUCT ARE ILLUSTRATIVE.</p>
+    <div class="links">
+      <a href="https://github.com/Mrunali121/food-delivery-product-case-study" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://mrunali121.github.io/" target="_blank" rel="noopener">Portfolio</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
